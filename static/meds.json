@@ -1,0 +1,83 @@
+[
+    {
+        "nome": "Noradrenalina",
+        "conc_padrao_mg": 8,
+        "conc_padrao_ml": 250,
+        "und_medida": "mcg/kg/min",
+        "intervalo_min": 0.01,
+        "intervalo_max": 3,
+        "diluicao_padrao": "Noradrenalina (4mg/ml) 8 ml + SG 5% 234ml"
+    },
+    {
+        "nome": "Dobutamina",
+        "conc_padrao_mg": 250,
+        "conc_padrao_ml": 250,
+        "und_medida": "mcg/kg/min",
+        "intervalo_min": 1,
+        "intervalo_max": 30,
+        "diluicao_padrao": "Dobutamina (250mg/20ml) 20 ml + SG 5% 230 ml"
+    },
+    {
+        "nome": "Dopamina",
+        "conc_padrao_mg": 250,
+        "conc_padrao_ml": 250,
+        "und_medida": "mcg/kg/min",
+        "intervalo_min": 1,
+        "intervalo_max": 25,
+        "diluicao_padrao": "Dopamina (250mg/20ml) 20 ml + SG 5% 230 ml"
+    },
+    {
+        "nome": "Adrenalina",
+        "conc_padrao_mg": 10,
+        "conc_padrao_ml": 200,
+        "und_medida": "mcg/kg/min",
+        "intervalo_min": 0.1,
+        "intervalo_max": 0.5,
+        "diluicao_padrao": "Adrenalina (1mg/ml) 10 ml + SG 5% 190 ml"
+    },
+    {
+        "nome": "Nitroprussiato",
+        "conc_padrao_mg": 50,
+        "conc_padrao_ml": 250,
+        "und_medida": "mcg/kg/min",
+        "intervalo_min": 0.25,
+        "intervalo_max": 10,
+        "diluicao_padrao": "Nitroprussiato (50mg/2ml) 2 ml + SG 5% 248 ml"
+    },
+    {
+        "nome": "Nitroglicerina",
+        "conc_padrao_mg": 50,
+        "conc_padrao_ml": 250,
+        "und_medida": "mcg/min",
+        "intervalo_min": 5,
+        "intervalo_max": 200,
+        "diluicao_padrao": "Nitroglicerina (50mg/10ml) 10 ml + SF 0,9% 240ml"
+    },
+    {
+        "nome": "Fentanil",
+        "conc_padrao_mg": 1,
+        "conc_padrao_ml": 100,
+        "und_medida": "mcg/kg/h",
+        "intervalo_min": 1,
+        "intervalo_max": 7,
+        "diluicao_padrao": "Fentanil (500mcg/10ml) 20 ml + SG 5% 80 ml"
+    },
+    {
+        "nome": "Propofol",
+        "conc_padrao_mg": 2000,
+        "conc_padrao_ml": 200,
+        "und_medida": "mcg/kg/min",
+        "intervalo_min": 5,
+        "intervalo_max": 80,
+        "diluicao_padrao": "Propofol (200mg/20ml) 200 ml em BI"
+    },
+    {
+        "nome": "Midazolam",
+        "conc_padrao_mg": 50,
+        "conc_padrao_ml": 250,
+        "und_medida": "mcg/kg/h",
+        "intervalo_min": 20,
+        "intervalo_max": 200,
+        "diluicao_padrao": "Midazolam (50mg/10ml) 10 ml + SG 5% 240 ml"
+    }
+]
