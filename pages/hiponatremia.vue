@@ -56,14 +56,20 @@
         class="mb-6"
         shaped>
 
-        <v-card-title>Sódio</v-card-title>
+        <v-card-title>Dados</v-card-title>
 
         <v-divider></v-divider>
 
         <v-row class="pa-4">
 
           <v-col align-self="center">
-              <h1 class="text-center">[ Na+ ]</h1>
+            <h1 class="text-center">[ Na+ ]</h1>
+            <v-card-text class="text-center">
+              Solução salina a 3%: <strong>513 mEq/L</strong>
+            </v-card-text>
+            <v-card-text class="text-center">
+              Na+ corrigido: <strong> {{ calcNaCorrigido.toFixed(1) }} </strong>
+            </v-card-text>
           </v-col>
 
           <v-col>
@@ -81,11 +87,15 @@
                 required></v-text-field>
 
               <v-text-field
-                v-model="sodioSoro"
-                label="Na+ do soro"
+                v-model="glicemia"
+                label="Glicemia do paciente"
                 outlined
                 clearable
                 required></v-text-field>
+              <v-checkbox
+                v-model="mulher"
+                label="Mulher?"></v-checkbox>
+
             </v-row>
 
           </v-col>
@@ -102,9 +112,9 @@
 
         <v-divider></v-divider>
 
-        <v-card-text class="subtitle-2">Solução salina a 3%:</v-card-text>
-        <v-card-text>{{ (calc3h/3).toFixed(1)}}ml/h nas primeiras 3h</v-card-text>
-        <v-card-text>{{ (calc21h/21).toFixed(1)}}ml/h nas próximas 21h </v-card-text>
+        <v-card-text class="subtitle-2">Solução salina a 3% (SF 0,9% 900ml + NaCl 20% 100ml):</v-card-text>
+        <v-card-text><strong>{{ (calc3h/3).toFixed(1)}}ml/h </strong> nas primeiras 3h <small>({{ calc3h.toFixed(1) }}ml)</small> </v-card-text>
+        <v-card-text><strong>{{ (calc21h/21).toFixed(1)}}ml/h </strong> nas próximas 21h <small>({{ calc21h.toFixed(1) }}ml)</small> </v-card-text>
 
       </v-card>
 
@@ -123,6 +133,7 @@ export default {
       sodioSoro: 513, // nacl 3%
       mulher: false,
       totalVarSodio24h: 8,
+      glicemia: 100,
     }
   },
   methods: {
@@ -142,7 +153,10 @@ export default {
     },
     calc21h: function () {
       return (this.totalVarSodio24h - 3) / this.variacaoNaPorLitro() * 1000
-    }
+    },
+    calcNaCorrigido: function () {
+      return (+this.sodio + (((this.glicemia - 100) / 100) * 1.6))
+    },
   }
 
 }
