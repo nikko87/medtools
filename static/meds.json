@@ -1,12 +1,12 @@
 [
     {
         "nome": "Noradrenalina",
-        "conc_padrao_mg": 8,
+        "conc_padrao_mg": 16,
         "conc_padrao_ml": 250,
         "und_medida": "mcg/kg/min",
         "intervalo_min": 0.01,
         "intervalo_max": 3,
-        "diluicao_padrao": "Noradrenalina (4mg/ml) 8 ml + SG 5% 234ml"
+        "diluicao_padrao": "Noradrenalina (4mg/ml) 16 ml + SG 5% 234ml"
     },
     {
         "nome": "Dobutamina",

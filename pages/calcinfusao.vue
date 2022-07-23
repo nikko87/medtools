@@ -38,6 +38,9 @@
         class="mb-6"
         shaped>
 
+        <v-card-title>Peso</v-card-title>
+        <v-divider></v-divider>
+
         <v-row class="pa-4">
 
           <v-col>

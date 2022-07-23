@@ -92,12 +92,17 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Calculadora de infusão',
           to: '/calcinfusao'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Hiponatremia',
+          to: '/hiponatremia'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'MEDTools v1.0'
     }
   }
 }
