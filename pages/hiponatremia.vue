@@ -42,6 +42,7 @@
               :rules="[() => !!peso || 'Campo obrigatório']"
               label="Peso do paciente:"
               placeholder="Kg"
+              type="number"
               outlined
               clearable
               required></v-text-field>
@@ -82,6 +83,7 @@
               <v-text-field
                 v-model="sodio"
                 label="Na+ do paciente"
+                type="number"
                 outlined
                 clearable
                 required></v-text-field>
@@ -90,6 +92,7 @@
                 v-model="glicemia"
                 label="Glicemia do paciente"
                 outlined
+                type="number"
                 clearable
                 required></v-text-field>
               <v-checkbox

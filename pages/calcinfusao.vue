@@ -9,7 +9,6 @@
       sm="8"
       xs="12">
 
-
       <v-row>
         <strong>Selecione um medicamento:</strong>
       </v-row>
@@ -65,6 +64,7 @@
               placeholder="Kg"
               outlined
               clearable
+              type="number"
               required></v-text-field>
 
           </v-col>
@@ -114,12 +114,14 @@
                 v-model="cur_med.conc_padrao_mg"
                 label="(mg)"
                 outlined
+                type="number"
                 clearable
                 required></v-text-field>
 
               <v-text-field
                 v-model="cur_med.conc_padrao_ml"
                 label="(ml)"
+                type="number"
                 outlined
                 clearable
                 required></v-text-field>
@@ -147,7 +149,8 @@
             <v-text-field
               :label="getLabel"
               v-model="dose"
-              outlined 
+              type="number"
+              outlined
               clearable />
           </v-col>
 
@@ -201,7 +204,7 @@ export default {
   name: 'IndexPage',
   data: function () {
     return {
-      cur_med: { },
+      cur_med: {},
       peso: 70.0,
       dose: 0.0,
       result: 0.0,
