@@ -169,12 +169,12 @@
             <h2
               class="text-center"
               v-if="!reverse"> {{ getResult.toFixed(2) }}
-              <p class="text-center">ml/h</p>
+              <p class="text-center"><small>ml/h</small></p>
             </h2>
             <h2
               class="text-center"
               v-else> {{ getResult.toFixed(2) }}
-              <p class="text-center">{{ cur_med.und_medida }}</p>
+              <p class="text-center"><small>{{ cur_med.und_medida }}</small></p>
             </h2>
           </v-col>
 
