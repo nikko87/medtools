@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/calcinfusao", {data:[{}],fetch:{},mutations:void 0});
