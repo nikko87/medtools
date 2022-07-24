@@ -84,7 +84,12 @@ export default {
           icon: 'mdi-calculator',
           title: 'Hiponatremia',
           to: '/hiponatremia'
-        }
+        },
+        {
+          icon: 'mdi-calculator',
+          title: 'Hipernatremia',
+          to: '/hipernatremia'
+        },
       ],
       miniVariant: false,
       right: true,
